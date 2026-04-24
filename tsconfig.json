@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+
+    "module": "Node16",
+    "moduleResolution": "Node16",
+
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["pages/*"],
+      "@data/*": ["test-data/*"]
+    },
+
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "skipLibCheck": true,
+
+    "types": ["@playwright/test"],
+
+    "resolveJsonModule": true,
+
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
